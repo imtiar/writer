@@ -43,32 +43,34 @@
 
 `サインアップ`
 
-![サインアップ](https://user-images.githubusercontent.com/78004609/121285867-0549fe00-c91a-11eb-9a12-085fe253a28a.png)
+![EEEF824D-B4A9-4FB1-B02F-88DD05A097F1_1_105_c](https://user-images.githubusercontent.com/46142153/122705583-028fc700-d291-11eb-885d-e01102378314.jpeg)
 
-`ユーザー編集`
 
-![ユーザー編集画面](https://user-images.githubusercontent.com/78004609/121286069-49d59980-c91a-11eb-8832-9f77ae800494.png)
+`ユーザー設定`
 
-`タスク一覧`
+![DCB62CCD-76D5-4B26-95A0-64A4ABD35904_1_105_c](https://user-images.githubusercontent.com/46142153/122705605-0a4f6b80-d291-11eb-9344-3447061d4f88.jpeg)
 
-![タスク一覧](https://user-images.githubusercontent.com/78004609/121286259-8acdae00-c91a-11eb-8c87-c7c1af8f0a9e.png)
 
-`マイタスク一覧`
+`作品一覧（皆の小言）`
 
-<img width="1438" alt="マイタスク" src="https://user-images.githubusercontent.com/78004609/121286391-b8b2f280-c91a-11eb-8e6c-d5576985e821.png">
+![0605BA49-96EB-47FC-8EF5-C5FA6CE1EE05_1_105_c](https://user-images.githubusercontent.com/46142153/122705657-26530d00-d291-11eb-86f6-c83c80243607.jpeg)
 
-`タスク詳細`
 
-<img width="1438" alt="タスク詳細" src="https://user-images.githubusercontent.com/78004609/121286475-db450b80-c91a-11eb-8d98-7758555ac6e4.png">
+`マイ作品一覧（私の小言）`
 
-`タスク新規`
+![FB4E82B6-9597-469D-A5A9-59B54AF7EA3B_1_105_c](https://user-images.githubusercontent.com/46142153/122705774-59959c00-d291-11eb-82c9-c0b1a8c77c71.jpeg)
 
-<img width="1438" alt="タスク新規" src="https://user-images.githubusercontent.com/78004609/121286582-fca5f780-c91a-11eb-968b-111150f96821.png">
 
-`タスク編集`
+`作品詳細`
 
-<img width="1438" alt="タスク編集" src="https://user-images.githubusercontent.com/78004609/121286711-30811d00-c91b-11eb-908b-ee2563664ef4.png">
+![D3740319-A944-4767-8BB4-2C84B6847CF3_1_105_c](https://user-images.githubusercontent.com/46142153/122705865-8184ff80-d291-11eb-89a1-130f9c0ddf78.jpeg)
 
-`タスクアサイン`
 
-<img width="1438" alt="タスクアサイン" src="https://user-images.githubusercontent.com/78004609/121286790-4b539180-c91b-11eb-813d-7143d61ed8f3.png">
+`作品新規`
+
+![B0784BD9-88DE-4A11-B8EA-3721D5284743_1_105_c](https://user-images.githubusercontent.com/46142153/122705880-8cd82b00-d291-11eb-9fac-145c95fc34a1.jpeg)
+
+
+`作品編集`
+
+![0C40C670-B2C5-470F-9138-06457B4E85AC_1_105_c](https://user-images.githubusercontent.com/46142153/122705897-92ce0c00-d291-11eb-85e9-3dfb367d79a0.jpeg)
