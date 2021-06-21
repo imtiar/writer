@@ -15,12 +15,12 @@
 
 ## サンプルアカウント
 ### ユーザーA
-- Eメール `aaa@com`
-- パスワード `a12345`
+- Eメール `mo@gmail.com`
+- パスワード `writer`
 
 ### ユーザーB
-- Eメール `bbb@com`
-- パスワード `a12345`
+- Eメール `nyonyo@gmail.com`
+- パスワード `writer`
 
 ## テーブル設計
 `usersテーブル`
@@ -28,11 +28,11 @@
 - 名前(name)
 
 `tasksテーブル`
-- タイトル(title)
-- 内容(content)
-- 期限(deadline)
-- 担当者(user_id)
-- ステータス(status)
+- 1行目(text)
+- 2行目(text)
+- 3行目(text)
+- 状態（投稿済みか下書きか）(integer)
+- 作成者(user_id)
 
 ## 画面設計
 
