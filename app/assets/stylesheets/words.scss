@@ -1,0 +1,141 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+div.word-panel {
+    height: 300px;
+    margin: 20px;
+    width: 40%;
+}
+
+div.word-show-shpanel{
+    height: 300px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.form-panel{
+    margin-left: 100px;
+}
+
+.row{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounded {
+    border-radius: 0.25rem !important;
+}
+
+div.word-title{
+    background-color: #F0FFFF;
+    font-size: 100px;
+}
+
+div.header{
+    background-color: #F0FFFF;
+    height: 100px;
+    padding-left:50px;
+    padding-top: 20px;
+    weight: 100px;
+
+}
+
+.border-success{
+    padding: 0px;
+}
+
+.button{
+    background-color: #59b300;
+    color: white;
+}
+
+.container{
+    padding: 0px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#daimei{
+    font-size: 40px;
+    margin: auto;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#user-edit-link{
+    margin: 10px;
+}
+
+#my-words-link{
+    font-size: 30px;
+    margin: 10px;
+    padding: auto;
+}
+
+#daimei{
+    position: relative;
+    padding: 0.25em 1em;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+#daimei:before, #daimei:after {
+    content: '';
+    position: absolute;
+    top: -7px;
+    width: 2px;
+    height: -webkit-calc(100% + 14px);
+    height: calc(100% + 14px);
+    background-color: black;
+}
+
+#daimei:before {
+    left: 7px;
+}
+
+#daimei:after {
+    right: 7px;
+}
+
+#my-words-link{
+    margin: 30px;
+    margin-bottom: 10px;
+}
+
+#user-edit-link{
+    margin: 30px;
+    margin-bottom: 50px;
+}
+
+#signin-link{
+    margin: 30px;
+    margin-bottom: 50px;
+}
+
+.row{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.word-links{
+    padding-left: 20px;
+}

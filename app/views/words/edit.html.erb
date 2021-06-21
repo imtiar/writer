@@ -1,0 +1,36 @@
+<div class = "container">
+    <div class = "header">
+        <a id = "daimei" style"margin:10px;">Okogoto</a>
+
+        <b id="my-words-link" style"margin:10px;">
+        <%= link_to 'minna no kogoto', words_path %>
+        </b>
+
+        <% if current_user %>
+        <b id="user-edit-link" style"margin:10px;">
+            <%= link_to 'settei', edit_user_registration_path %>
+        </b>
+        <% end %>
+
+        <% if current_user %>
+        <b id="signin-link">
+            <%= link_to 'log out', destroy_user_session_path, method: :delete, data: {confirm: 'roguauto simasuka?'}%>
+        </b>
+        <% else %>
+        <b id="signin-link">
+            <%= link_to 'log in', new_user_session_path%>
+        </b>
+        <% end %>
+    </div>
+
+    <div class = "form-panel">
+        <br>
+
+        <h1 >編集画面</h1>
+
+        <%= render 'form', word: @word %>
+
+        <%= link_to '戻る', words_path %>
+    </div>
+
+</div>

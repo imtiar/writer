@@ -1,0 +1,45 @@
+<%if word.status == 1 %>
+      <div class="border border-success rounded col-sm-auto col-md-auto word-panel">
+        <div class= "word-title text-center">
+            <h2><%= word.line1 %></h2>
+            <h2><%= word.line2 %></h2>
+            <h2><%= word.line3 %></h2>
+        </div>
+        <%= "状態: 投稿済み"%>
+
+        <div class="word-links">
+        <br>
+          <%= form_with(model: word) do |f| %>
+              <%= f.hidden_field :status, value: 0 %>
+              <%= f.submit "下書きにする", class: 'btn btn-info'%>
+          <% end %>
+          <br>
+          <%= link_to 'Show', word, class: 'btn btn-default border' %>          
+          <%= link_to '編集', edit_word_path(word), class: 'btn btn-info' %>
+          <%= link_to '削除', word, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+        </div>
+      </div>
+    
+<% else %>
+      <div class="border border-primary rounded col-sm-auto col-md-auto word-panel">
+        <div class= "word-title text-center">
+        <h2><%= word.line1 %></h2>
+        <h2><%= word.line2 %></h2>
+        <h2><%= word.line3 %></h2>
+        </div>
+        <%= "状態：下書き"%>
+        <br>
+
+        <div class="word-links">
+        <br>
+          <%= form_with(model: word) do |f| %>
+            <%= f.hidden_field :status, value: 1 %>
+            <%= f.submit "投稿する", class: 'btn btn-info' %>
+          <% end %>
+          <br>
+          <%= link_to 'Show', word, class: 'btn btn-default border' %>          
+          <%= link_to '編集', edit_word_path(word), class: 'btn btn-info' %>
+          <%= link_to '削除', word, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+        </div>
+      </div>
+<% end %>

@@ -1,0 +1,61 @@
+<div class = "container">
+  <div class = "header">
+    <a id = "daimei">Okogoto</a>
+
+    <b id="my-words-link" style"margin:10px;">
+        <%= link_to '皆の小言', words_path %>
+    </b>
+
+    <% if current_user %>
+      <b id="user-edit-link">
+        <%= link_to 'プロフィール設定', edit_user_registration_path %>
+      </b>
+    <% end %>
+
+    <% if current_user %>
+      <b id="signin-link">
+        <%= link_to 'サインアウト', destroy_user_session_path, method: :delete, data: {confirm: 'roguauto simasuka?'}%>
+      </b>
+    <% else %>
+      <b id="signin-link">
+        <%= link_to 'サインイン', new_user_session_path%>
+      </b>
+    <% end %>
+  </div>
+
+  <br>
+  <h2>サインアップ</h2>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field">
+      <%= f.label :name %><br />
+      <%= f.text_field :name, size: "100x50" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", size: "100x50" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password %>
+      <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "new-password", size: "100x50" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password_confirmation %><br />
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", size: "100x50" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Sign up", class:"btn button" %>
+    </div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
+</div>

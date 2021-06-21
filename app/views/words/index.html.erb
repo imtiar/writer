@@ -1,0 +1,35 @@
+<div class="container">
+  <div class = "header">
+      <a id = "daimei">Okogoto</a>
+
+      <b id="my-words-link" style"margin:10px;">
+        <%= link_to '私の小言', words_mine_path %>
+      </b>
+
+      <% if current_user %>
+        <b id="user-edit-link">
+          <%= link_to 'プロフィール設定', edit_user_registration_path %>
+        </b>
+      <% end %>
+      
+      <% if current_user %>
+        <b id="signin-link">
+          <%= link_to 'サインアウト', destroy_user_session_path, method: :delete, data: {confirm: 'roguauto simasuka?'}%>
+        </b>
+      <% else %>
+        <b id="signin-link">
+          <%= link_to 'サインイン', new_user_session_path%>
+        </b>
+      <% end %>
+  </div>
+
+  <div class="row">
+    <% @words.each do |word| %> 
+      <% if word.status == 1 %>
+        <%= render :partial => "word", :locals => { word: word } %>
+      <% end %>
+    <% end %>
+  </div>
+
+
+</div>

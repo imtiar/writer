@@ -1,0 +1,57 @@
+<%= form_with(model: word) do |form| %>
+  <% if word.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(word.errors.count, "error") %> prohibited this word from being saved:</h2>
+
+      <ul>
+        <% word.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :line1 %>
+    <br>
+    <%= form.text_field :line1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :line2 %>
+    <br>
+    <%= form.text_field :line2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :line3 %>
+    <br>
+    <%= form.text_field :line3 %>
+  </div>
+
+  <br>
+  
+  <div class="field">
+    <%= form.label :"ユーザー変更" %>
+    <br>
+    <% user_array = [] %>
+    <% User.all.each do |user| %>
+      <% user_array.push([user.name , user.id]) %>
+    <% end %>
+    <%= form.select :user_id, user_array %>
+  </div>
+
+  <br>
+
+  <div class="toukou">
+    <%= form.submit "toukou", name: "status" %>
+  </div>
+
+  <br>
+
+  <div class="shitagaki">
+    <%= form.submit "shitagaki", name: "status" %>
+  </div>
+
+  <br>
+<% end %>
