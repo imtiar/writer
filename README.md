@@ -38,7 +38,8 @@
 
 `ログイン`
 
-<img width="1365" alt="ログイン" src="https://user-images.githubusercontent.com/78004609/121285710-cb78f780-c919-11eb-8fda-84fc28f8e092.png">
+![4EE422A5-3CED-443E-A52E-B5E407A82FB6](https://user-images.githubusercontent.com/46142153/122705531-ea1fac80-d290-11eb-90eb-26f699112db7.jpeg)
+
 
 `サインアップ`
 
